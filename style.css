@@ -102,6 +102,20 @@ section p {
   background-color: #bdbdbd;
 }
 
+.img-pfp {
+  display: inline-block;
+  padding: 50px;
+  width: 400px;
+  height: 400px;
+}
+
+.about-me {
+  display: inline-block;
+  padding: 20px 50px 50px 20px;
+  vertical-align: middle;
+  text-align: left;
+}
+
 a:link {
   color: #D0CCBA;
 }
@@ -121,12 +135,6 @@ a:active {
   color: #B6A35D;
 }
 
-img1 {
-  display: block;
-  margin-left: 100px;
-  width: 50%;
-}
-
 .project {
   display: flex;
   align-items: center;
@@ -140,4 +148,3 @@ img1 {
   border-radius: 50%;
   margin-right: 20px;
 }
-
