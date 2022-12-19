@@ -77,6 +77,9 @@ section h3 {
 section p1 {
   padding-top: 100px;
   margin: 20px 0;
+  font-size: 18px;
+  line-height: 1.5
+  color: #DDDDDD;
 }
 
 section p {
@@ -116,9 +119,7 @@ clear: both;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  font-size: 18px;
-  line-height: 1.5
-  color: #DDDDDD;
+
 }
 
 .left-column {
