@@ -102,6 +102,11 @@ section p {
   background-color: #bdbdbd;
 }
 
+.about-me-box {
+  display: grid;
+  align-items: center;
+}
+
 .img-pfp {
   display: inline-block;
   padding: 50px;
