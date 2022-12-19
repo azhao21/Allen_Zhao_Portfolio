@@ -102,6 +102,18 @@ section p {
   background-color: #bdbdbd;
 }
 
+.column {
+float: left;
+width: 50%;
+}
+
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+/*
 .about-me-box {
   display: grid;
   align-items: center;
@@ -119,7 +131,7 @@ section p {
   padding: 20px 50px 50px 20px;
   vertical-align: middle;
   text-align: left;
-}
+} */
 
 a:link {
   color: #D0CCBA;
