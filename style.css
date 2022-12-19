@@ -78,7 +78,8 @@ section p1 {
   padding-top: 100px;
   margin: 20px 0;
   font-size: 18px;
-  color: #D0CCBA;
+  line-height: 1.5
+  color: #DDDDDD;
 }
 
 section p {
@@ -121,12 +122,12 @@ clear: both;
 }
 
 .left-column {
-  width: 400px;
+  width: 600px;
   margin-right: 50px;
 }
 
 .right-column {
-  width: 400px;
+  width: 600px;
   margin-left: 50px;
 }
 
