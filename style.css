@@ -120,12 +120,14 @@ clear: both;
 }
 
 .left-column {
-  width: 300px;
+  padding: 50px;
+  width: 400px;
   text-align: right;
 }
 
 .right-column {
-  width: 300px;
+  padding: 50px;
+  width: 400px;
   text-align: left;
 }
 
@@ -133,26 +135,6 @@ img {
   width: 100%;
   height: auto;
 }
-
-/*
-.about-me-box {
-  display: grid;
-  align-items: center;
-}
-
-.img-pfp {
-  display: inline-block;
-  padding: 50px;
-  width: 400px;
-  height: 400px;
-}
-
-.about-me {
-  display: inline-block;
-  padding: 20px 50px 50px 20px;
-  vertical-align: middle;
-  text-align: left;
-} */
 
 a:link {
   color: #D0CCBA;
