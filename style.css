@@ -115,20 +115,19 @@ clear: both;
 
 .container {
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .left-column {
-  padding: 50px;
   width: 400px;
-  text-align: right;
+  margin-right: 50px;
 }
 
 .right-column {
-  padding: 50px;
   width: 400px;
-  text-align: left;
+  margin-left: 50px;
 }
 
 img {
