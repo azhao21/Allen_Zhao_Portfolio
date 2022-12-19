@@ -70,22 +70,14 @@ section h3 {
   margin: 0;
   font-size: 24px;
   font-weight: bold;
-  color: #B6A35D;
+  color: #D0CCBA;
   font-family: Georgia, Times New Roman, Times, serif;
 }
 
 section p1 {
   padding-top: 100px;
-  margin: 20px;
+  margin: 20px 0;
   font-size: 18px;
-  color: #D0CCBA;
-}
-
-section p2 {
-  padding-top: 100px;
-  margin: 20px;
-  line-height: 1.5;
-  font-size: 15px;
   color: #D0CCBA;
 }
 
@@ -110,6 +102,17 @@ section p {
   background-color: #bdbdbd;
 }
 
+.column {
+float: left;
+width: 300px;
+}
+
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -126,10 +129,30 @@ section p {
   text-align: left;
 }
 
-.about-me img {
-  width: 200px;
-  height: 200px;
+img {
+  width: 100%;
+  height: auto;
 }
+
+/*
+.about-me-box {
+  display: grid;
+  align-items: center;
+}
+
+.img-pfp {
+  display: inline-block;
+  padding: 50px;
+  width: 400px;
+  height: 400px;
+}
+
+.about-me {
+  display: inline-block;
+  padding: 20px 50px 50px 20px;
+  vertical-align: middle;
+  text-align: left;
+} */
 
 a:link {
   color: #D0CCBA;
