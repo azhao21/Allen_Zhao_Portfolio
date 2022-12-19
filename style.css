@@ -77,9 +77,6 @@ section h3 {
 section p1 {
   padding-top: 100px;
   margin: 20px 0;
-  font-size: 18px;
-  line-height: 1.5
-  color: #DDDDDD;
 }
 
 section p {
@@ -129,6 +126,12 @@ clear: both;
 .right-column {
   width: 600px;
   margin-left: 50px;
+}
+
+.am-text{
+  font-size: 18px;
+  line-height: 1.5
+  color: #DDDDDD;
 }
 
 img {
