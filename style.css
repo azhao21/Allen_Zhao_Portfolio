@@ -76,14 +76,14 @@ section h3 {
 
 section p1 {
   padding-top: 100px;
-  margin: 20px 0;
+  margin: 20px;
   font-size: 18px;
-  line-height: 1.5
+  line-height: 1.5;
   color: #DDDDDD;
 }
 
 section p {
-  margin: 20px 0;
+  margin: 20px;
   font-size: 18px;
 }
 
@@ -103,17 +103,6 @@ section p {
   background-color: #bdbdbd;
 }
 
-.column {
-float: left;
-width: 300px;
-}
-
-.row:after {
-content: "";
-display: table;
-clear: both;
-}
-
 .container {
   display: flex;
   align-items: center;
@@ -124,12 +113,12 @@ clear: both;
 
 .left-column {
   width: 700px;
-  margin-right: 50px;
+  padding: 50px;
 }
 
 .right-column {
   width: 700px;
-  margin-left: 50px;
+  padding: 50px;
 }
 
 img {
