@@ -104,13 +104,32 @@ section p {
 
 .column {
 float: left;
-width: 50%;
+width: 300px;
 }
 
 .row:after {
 content: "";
 display: table;
 clear: both;
+}
+
+.container {
+  display: flex;
+}
+
+.left-column {
+  width: 50%;
+  text-align: right;
+}
+
+.right-column {
+  width: 50%;
+  text-align: left;
+}
+
+img {
+  width: 100%;
+  height: auto;
 }
 
 /*
