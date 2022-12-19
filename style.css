@@ -110,17 +110,6 @@ section p {
   background-color: #bdbdbd;
 }
 
-.column {
-float: left;
-width: 300px;
-}
-
-.row:after {
-content: "";
-display: table;
-clear: both;
-}
-
 .container {
   display: flex;
   flex-wrap: wrap;
