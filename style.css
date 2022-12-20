@@ -70,7 +70,7 @@ section h2 {
 }
 
 section h3 {
-  margin: 0;
+  margin: 20px;
   font-size: 24px;
   font-weight: bold;
   color: #B6A35D;
@@ -85,7 +85,7 @@ section p {
 /* text classes */
 .p1 {
   margin: 20px;
-  font-size: 18px;
+  font-size: 24px;
   line-height: 1.5;
   color: #303030;
 }
@@ -151,10 +151,13 @@ section p {
   }
 
 .text-box {
+    border-width: thin;
+    border-color: black;
+    background-color: white;
     width: 900px;
     text-align: left;
     margin: 0 auto;
-    padding: 50px;
+    padding: 20px;
   }
 
 .project-img {
