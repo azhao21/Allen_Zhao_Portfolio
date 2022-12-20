@@ -49,6 +49,7 @@ main {
 section {
   padding: 20px;
   text-align: center;
+  width: 100%;
 }
 
 section h1 {
@@ -75,7 +76,6 @@ section h3 {
 }
 
 section p1 {
-  padding-top: 100px;
   margin: 20px;
   font-size: 18px;
   line-height: 1.5;
