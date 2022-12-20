@@ -88,7 +88,7 @@ section p {
 }
 
 .color-1 {
-  background-color: #2E2E2E;
+  background-color: #282828;
 }
 
 .color-2 {
@@ -110,6 +110,12 @@ section p {
   width: 100%;
 }
 
+.vertical-align {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .container {
   display: flex;
   align-items: center;
@@ -126,6 +132,7 @@ section p {
 .right-column {
   width: 700px;
   padding: 50px;
+  text-align: left;
 }
 
 img {
