@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  width: 100%;
   font-family: sans-serif;
 }
 
@@ -44,6 +45,7 @@ header nav ul li a:hover {
 main {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-top: 48px; /* make room for the fixed header */
+  width: 100%;
 }
 
 section {
@@ -57,7 +59,7 @@ section h1 {
   font-family: Georgia, Times New Roman, Times, serif;
   font-size: 100px;
   color: #B6A35D;
-  padding-top: 12vh;
+  padding-top: 30vh;
 }
 
 section h2 {
@@ -109,7 +111,6 @@ section p {
   min-height: 100vh;
   width: 100%;
   display: flex;
-  align-items: center;
 }
 /*
 .vertical-align {
