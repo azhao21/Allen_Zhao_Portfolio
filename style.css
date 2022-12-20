@@ -1,7 +1,4 @@
 @media (max-width: 768px) {
-  .navbar {
-    opacity: 0.95;
-  }
 
   .navbar-container input[type="checkbox"],
   .navbar-container .hamburger-lines {
@@ -64,14 +61,12 @@
     padding-top: 100px;
     background: #fff;
     height: 100vh;
-    max-width: 300px;
-    transform: translate(-150%);
+    width: 50vw;
+    margin-right: 50vw;
+    transform: translate(-50vw);
     display: flex;
     flex-direction: column;
-    margin-left: -40px;
-    padding-left: 50px;
     transition: transform 0.5s ease-in-out;
-    box-shadow: 5px 0px 10px 0px #aaa;
   }
 
   .navbar .menu-items li {
@@ -108,13 +103,13 @@ body {
 main {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   margin-top: 48px; /* make room for the fixed header */
-  width: 100%;
+  width: 100vw;
 }
 
 section {
   padding: 20px;
   text-align: center;
-  width: 100%;
+  width: 100vw;
 }
 
 section h1 {
@@ -150,7 +145,7 @@ section p {
 header {
   background-color: #282828;
   color: #fff;
-  width: 100%;
+  width: 100vw;
   position: fixed;
   top: 0;
   left: 0;
@@ -185,6 +180,10 @@ header nav ul li a:hover {
   color: #B6A35D;
 }
 
+.desk-cancel {
+  display: none;
+
+}
 
 /* text classes */
 .p1 {
