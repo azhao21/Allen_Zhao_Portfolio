@@ -4,7 +4,7 @@ body {
 }
 
 header {
-  background-color: #2E2E2E;
+  background-color: #3D3D3D;
   color: #fff;
   width: 100%;
   position: fixed;
@@ -101,6 +101,13 @@ section p {
 
 .color-4 {
   background-color: #bdbdbd;
+}
+
+.name-page {
+  background-image: url(name_background.png);
+  background-repeat: repeat;
+  height: 100%
+  width: 100%;
 }
 
 .container {
