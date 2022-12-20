@@ -73,7 +73,7 @@ section h3 {
   margin: 0;
   font-size: 24px;
   font-weight: bold;
-  color: #D0CCBA;
+  color: #B6A35D;
   font-family: Georgia, Times New Roman, Times, serif;
 }
 
@@ -81,7 +81,7 @@ section p1 {
   margin: 20px;
   font-size: 18px;
   line-height: 1.5;
-  color: #DDDDDD;
+  color: #303030;
 }
 
 section p {
@@ -102,7 +102,7 @@ section p {
 }
 
 .color-4 {
-  background-color: #bdbdbd;
+  background-color: #fafafa;
 }
 
 .name-page {
