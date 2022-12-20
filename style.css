@@ -58,6 +58,7 @@ section h1 {
   margin: 0;
   font-family: Georgia, Times New Roman, Times, serif;
   font-size: 100px;
+  font-size: 10vw;
   color: #B6A35D;
   padding-top: 30vh;
 }
@@ -95,6 +96,13 @@ section p {
   font-size: 18px;
   line-height: 1.5;
   color: #D0CCBA;
+}
+
+.p3 {
+  margin: 20px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #white;
 }
 
 .color-1 {
@@ -147,15 +155,16 @@ section p {
 /* projects */
 .horizontal-center {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    padding-top: 50px;
+    padding-top: 80px;
   }
 
 .text-box {
     border-width: thin;
     border-color: black;
-    background-color: white;
-    width: 900px;
+    background-color: 282828;
+    width: 1000px;
     text-align: left;
     margin: 0 auto;
     padding: 20px;
