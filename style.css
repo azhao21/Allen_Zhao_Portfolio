@@ -90,6 +90,11 @@
   .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
     transform: rotate(-35deg);
   }
+  .project-img {
+      width: 300px;
+      height: auto;
+      padding: 50px;
+  }
 }
 
 body {
@@ -264,8 +269,7 @@ header nav ul li a:hover {
 .text-box {
     border-width: thin;
     border-color: black;
-    background-color: #282828;
-    width: 50vh + 150px;
+    width: 50vw + 150px;
     text-align: left;
     margin: 0 auto;
     padding: 20px;
