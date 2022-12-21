@@ -91,9 +91,12 @@
     transform: rotate(-35deg);
   }
   .project-img {
-      width: 300px;
+      width: 70vw;
       height: auto;
       padding: 50px;
+  }
+  .about-me {
+    width: 70vw;
   }
 }
 
@@ -257,6 +260,10 @@ header nav ul li a:hover {
   width: 500px;
   padding: 50px;
   text-align: left;
+}
+
+.about-me {
+  width: 400px;
 }
 
 /* projects */
