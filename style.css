@@ -163,6 +163,7 @@ header nav {
   align-items: center;
   height: 50px;
   font-family: Georgia, Times New Roman, Times, serif;
+  width: 100vw;
 }
 
 header nav ul {
@@ -260,7 +261,8 @@ header nav ul li a:hover {
 }
 
 .about-me {
-  width: 400px;
+  max-width: 100%
+  height: auto;
 }
 
 /* projects */
