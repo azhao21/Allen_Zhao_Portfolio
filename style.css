@@ -95,6 +95,13 @@
   .about-me {
     width: 70vw;
   }
+
+  .project-img {
+      max-width: 100%;
+      height: auto;
+      padding: 0px;
+  }
+
 }
 
 body {
