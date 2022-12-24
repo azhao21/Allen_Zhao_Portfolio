@@ -90,11 +90,7 @@
   .navbar-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
     transform: rotate(-35deg);
   }
-  .project-img {
-      width: 70vw;
-      height: auto;
-      padding: 50px;
-  }
+
   .about-me {
     width: 70vw;
   }
@@ -284,7 +280,7 @@ header nav ul li a:hover {
   }
 
 .project-img {
-    width: 400px;
+    max-width: 100%;
     height: auto;
     padding: 50px;
 }
