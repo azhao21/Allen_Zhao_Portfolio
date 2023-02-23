@@ -1,61 +1,64 @@
 const carouselSlide = document.querySelector('.carousel-slide');
-const carouselImages = document.querySelectorAll('.carousel-slide img');
+const carouselItems = document.querySelectorAll('.carousel-item');
 const carouselNavItems = document.querySelectorAll('.carousel-nav-item');
-const arrowLeft = document.querySelector('.carousel-arrow-left');
-const arrowRight = document.querySelector('.carousel-arrow-right');
+const carouselArrowLeft = document.querySelector('.carousel-arrow-left');
+const carouselArrowRight = document.querySelector('.carousel-arrow-right');
+const carouselTitle = document.querySelector('.carousel-title');
+const carouselWidth = carouselItems[0].clientWidth;
 
 let currentIndex = 0;
-let lastIndex = carouselImages.length - 1;
 
-// initialize carousel by setting the first slide to active
-carouselImages[currentIndex].parentElement.classList.add('active');
-carouselNavItems[currentIndex].classList.add('active');
+// Set initial slide position
+carouselSlide.style.transform = `translateX(${-carouselWidth * currentIndex}px)`;
 
-// add event listeners to nav items to allow direct navigation to a slide
-carouselNavItems.forEach((item, index) => {
-  item.addEventListener('click', () => {
-    // remove active classes from current slide and nav item
-    carouselImages[currentIndex].parentElement.classList.remove('active');
-    carouselNavItems[currentIndex].classList.remove('active');
-
-    // set new current index and add active classes to new slide and nav item
-    currentIndex = index;
-    carouselImages[currentIndex].parentElement.classList.add('active');
-    carouselNavItems[currentIndex].classList.add('active');
+// Highlight current slide and update title
+function updateCarousel() {
+  carouselItems.forEach((item, index) => {
+    if (index === currentIndex) {
+      item.classList.add('active');
+      carouselNavItems[index].classList.add('active');
+      carouselTitle.textContent = item.querySelector('.carousel-caption').textContent;
+    } else {
+      item.classList.remove('active');
+      carouselNavItems[index].classList.remove('active');
+    }
   });
-});
+}
 
-// add event listeners to arrows to allow scrolling through the slides
-arrowLeft.addEventListener('click', () => {
-  // remove active classes from current slide and nav item
-  carouselImages[currentIndex].parentElement.classList.remove('active');
-  carouselNavItems[currentIndex].classList.remove('active');
-
-  // decrement current index and handle wraparound
+// Go to previous slide
+function goToPrevSlide() {
   if (currentIndex === 0) {
-    currentIndex = lastIndex;
+    currentIndex = carouselItems.length - 1;
   } else {
     currentIndex--;
   }
+  carouselSlide.style.transform = `translateX(${-carouselWidth * currentIndex}px)`;
+  updateCarousel();
+}
 
-  // add active classes to new slide and nav item
-  carouselImages[currentIndex].parentElement.classList.add('active');
-  carouselNavItems[currentIndex].classList.add('active');
-});
-
-arrowRight.addEventListener('click', () => {
-  // remove active classes from current slide and nav item
-  carouselImages[currentIndex].parentElement.classList.remove('active');
-  carouselNavItems[currentIndex].classList.remove('active');
-
-  // increment current index and handle wraparound
-  if (currentIndex === lastIndex) {
+// Go to next slide
+function goToNextSlide() {
+  if (currentIndex === carouselItems.length - 1) {
     currentIndex = 0;
   } else {
     currentIndex++;
   }
+  carouselSlide.style.transform = `translateX(${-carouselWidth * currentIndex}px)`;
+  updateCarousel();
+}
 
-  // add active classes to new slide and nav item
-  carouselImages[currentIndex].parentElement.classList.add('active');
-  carouselNavItems[currentIndex].classList.add('active');
+// Handle arrow clicks
+carouselArrowLeft.addEventListener('click', goToPrevSlide);
+carouselArrowRight.addEventListener('click', goToNextSlide);
+
+// Handle nav clicks
+carouselNavItems.forEach((navItem, index) => {
+  navItem.addEventListener('click', () => {
+    currentIndex = index;
+    carouselSlide.style.transform = `translateX(${-carouselWidth * currentIndex}px)`;
+    updateCarousel();
+  });
 });
+
+// Update carousel on load
+updateCarousel();
