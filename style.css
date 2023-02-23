@@ -401,7 +401,7 @@ a:active {
   transform: translateY(-50%);
   font-size: 24px;
   font-weight: bold;
-  color: #fff;
+  color: #000;
   background-color: rgba(0, 0, 0, 0.5);
   width: 40px;
   height: 40px;
